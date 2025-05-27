@@ -1,1 +1,4 @@
+You're given 100 coins in a line, and you’re blindfolded. Exactly 10 of the coins show heads, and the other 90 are tails. You can touch and flip any coins you like, but you can’t see them or feel whether they’re heads or tails. Your goal is to separate the coins into two piles, such that both piles contain the same number of heads. You are allowed to flip coins however you want before making the two piles, but once you’re done, the piles must satisfy the condition — same number of heads — even though you never saw a single coin.
 
+solution - invariant logic
+Suppose you randomly chose a 10-coin pile, with k heads in it. That means the 90-coin pile has 10 - k heads. When you flip the 10-coin pile, the k heads become tails, and the 10 - k tails become heads — so the pile ends up with exactly 10 - k heads. Now both piles have 10 - k heads — guaranteed, no matter how the coins were arranged.
